@@ -57,7 +57,7 @@ class PlayersController extends Controller
     public function destroy(string $id)
     {
         $player = Player::findorfail($id);
-        $player->dalete();
+        $player->delete();
         return response()->json($player);
     }
 }
